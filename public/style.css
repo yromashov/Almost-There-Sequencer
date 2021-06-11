@@ -1,0 +1,51 @@
+.main {
+  font-family: sans-serif;
+  text-align: center;
+  height: 100vh;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.note-column {
+  display: flex;
+  flex-direction: column;
+}
+.note-column--active {
+  background: #228822;
+}
+
+.box {
+  background: tomato;
+  width: 100px;
+  height: 100px;
+  line-height: 150px;
+  margin-top: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.box:active {
+  background: darkblue;
+}
+
+.box--active {
+  background: darkblue;
+}
+
+.play-button {
+  padding: 0.5rem 1.5rem;
+  text-transform: uppercase;
+  margin: 1rem auto;
+  border: 2px solid #121212;
+  border-radius: 4px;
+  cursor: pointer;
+}
