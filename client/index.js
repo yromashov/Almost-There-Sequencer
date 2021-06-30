@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
+import App2 from "./App2";
 
 ReactDOM.render(
-  <App />,
-  document.getElementById("app") // make sure this is the same as the id of the div in your index.html
+  <App2 />,
+  document.getElementById("app2") // make sure this is the same as the id of the div in your index.html
 );

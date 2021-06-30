@@ -1,51 +1,99 @@
-.main {
-  font-family: sans-serif;
-  text-align: center;
-  height: 100vh;
+body {
+  background: black;
+  padding: 0;
+  height: auto;
 }
 
-.wrapper {
-  height: 100%;
-  display: flex;
+#app2 {
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-}
-
-.note-column {
   display: flex;
-  flex-direction: column;
-}
-.note-column--active {
-  background: #228822;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: space-around;
+  flex-flow: column wrap;
+  margin: auto;
 }
 
-.box {
-  background: tomato;
-  width: 100px;
-  height: 100px;
-  line-height: 150px;
-  margin-top: 10px;
-  color: white;
-  font-weight: bold;
-  font-size: 3em;
+#title {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: x-large;
+  color: #39ff14;
+  text-align: center;
+}
+
+.sequencer {
+  border-radius: 10px;
+  width: fit-content;
+  display: grid;
+  grid-template-rows: repeat(6, 3fr);
+  grid-template-columns: fit-content;
+  margin: auto;
+}
+
+#selecting {
+  height: 0px;
+  padding: 15px 32px;
+  position: relative;
+  font-family: "IBM Plex Mono", monospace;
+  color: #39ff14;
   text-align: center;
   margin: 10px;
+}
+
+button {
+  background-color: #39ff14;
+  border: #4666ff;
+  width: 150px;
+  height: 35px;
+  border-radius: 15px;
   cursor: pointer;
+  text-align: center;
+  margin: 5px;
+  padding: 2%;
+  font-family: "Roboto Mono", monospace;
+  font-style: italic;
+  color: #4666ff;
 }
 
-.box:active {
-  background: darkblue;
+.sequencer-row {
+  display: inline-block;
+  white-space: nowrap;
 }
 
-.box--active {
-  background: darkblue;
+.note-is-active {
+  background-color: #39ff14;
+  border: 1px solid black;
+  margin: 2px;
+  outline: none;
+  border-width: 1px;
+  border-radius: 5px;
+  height: 6em;
+  width: 6em;
 }
 
-.play-button {
-  padding: 0.5rem 1.5rem;
-  text-transform: uppercase;
-  margin: 1rem auto;
-  border: 2px solid #121212;
-  border-radius: 4px;
-  cursor: pointer;
+.note-not-active {
+  background-color: #4666ff;
+  border-radius: 5px;
+  height: 6em;
+  width: 6em;
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgray;
+  margin: 2px;
+}
+
+.note {
+  background-color: #4666ff;
+  border-radius: 5px;
+  height: 6em;
+  width: 6em;
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgray;
+  margin: 2px;
+}
+
+#play-button {
+  margin: auto;
 }

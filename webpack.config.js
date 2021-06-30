@@ -1,8 +1,14 @@
+
+
+
 module.exports = {
   entry: ["./client/index.js"],
   output: {
     path: __dirname,
     filename: "./public/bundle.js",
+  },
+  resolve: {
+    extensions: [".js", ".jsx", "*"],
   },
   devtool: "source-map",
   module: {
@@ -19,6 +25,10 @@ module.exports = {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
       },
+    //   {
+    //     test: /\.wav$/,
+    //     loader: 'file-loader'
+    // }
     ],
   },
 };
