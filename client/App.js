@@ -197,7 +197,7 @@ export default function App2() {
       <button
         id='reset'
         onClick={() => {
-          toggleReset(true);
+          window.location.reload(false);
         }}
       >
         Reset
